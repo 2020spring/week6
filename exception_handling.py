@@ -6,16 +6,17 @@ def division(a, b):
         print(a / b)
     except ZeroDivisionError as zerodv:
         print("you can not divide by Zero!")
-        print(a/1)
+        print(a / 1)
         print("Error: ", zerodv)
-    except ( NameError, TypeError) as err:
+    except (NameError, TypeError) as err:
         print("please check your input!")
         raise err  # this will raise regular error message and stop your execution
-    finally: # always executed either try block or except block executed
+    finally:  # always executed either try block or except block executed
         print("finally block is executed.")
 
+
 division(45, 15)
-division(45, 0) # exception handling expected
+division(45, 0)  # exception handling expected
 division(45, 10)
 division(45, 'hello')
 division(100, 15)
