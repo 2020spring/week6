@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome()  #
+driver = webdriver.Chrome()  # start the browser
 # or specify the path: driver = webdriver.Chrome('/path/to/chromedriver')
 driver.get("https://google.com")
 print("opened the browser and google website")
